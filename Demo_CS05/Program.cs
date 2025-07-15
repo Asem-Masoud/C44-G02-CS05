@@ -113,7 +113,52 @@
 
             #endregion
 
+            #region 04 Null-Propagation Operator
 
+            //double X = default; //0
+            //char c = default;
+
+            //Console.WriteLine(X);
+            //Console.WriteLine(c);
+
+            int[] Arr = default; //null
+
+            //int[] Arr = { 1, 2, 3, 4, 5 };
+
+            //for (int i = 0; (Arr is not null && i < Arr.Length); i++)
+            //    Console.WriteLine(Arr[i]);// System.NullReferenceException //because arr == null
+
+            //best practice
+            //if (Arr is not null)
+            //{
+            //    for (int i = 0; i < Arr.Length; i++)
+            //        Console.WriteLine(Arr[i]);
+
+            //}
+
+            //Null-Propagation Operator -> Arr?
+            //for (int i = 0; i < Arr?.Length; i++)
+            //    Console.WriteLine(Arr[i]);
+
+
+            // E?.Departement.DeptName
+
+            //int len = Arr is not null ? Arr.Length : 0;
+
+            //int? len = Arr?.Length;
+
+            int len = Arr?.Length ?? -1;
+
+
+            Console.WriteLine(len);
+
+
+
+
+
+
+
+            #endregion
 
 
         }
