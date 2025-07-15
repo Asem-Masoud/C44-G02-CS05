@@ -96,6 +96,26 @@
 
 
             #endregion
+
+            #region 03 Nullable ReferenceTypes
+            //string message = "jkgjg";
+
+
+            //string message02 = null;// required
+
+
+            //string? message03 = null;// nullable
+
+            //Console.WriteLine(message);
+            //Console.WriteLine(message02.Length);//System.NullReferenceException
+            //Console.WriteLine(message03);
+
+
+            #endregion
+
+
+
+
         }
     }
 }
