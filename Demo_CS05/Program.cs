@@ -122,7 +122,48 @@ namespace Demo_CS05
         static void Main()
         {
 
+            #region 01 Boxing And UnBoxing 
 
+            // Boxing : Casting From Value Type To ReferenceType
+            // UnBoxing : Casting From ReferenceType To ValueType
+
+            //object O1;
+
+            // 01 Can Refer To Instance Of "Object" Or Any Instance of Any Type
+
+            //O1 = 10;
+            //O1 = "Ahmed";
+
+
+            //O1 = 3; // Cast From Value Type [int] To Reference Type [object] Boxing
+            //O1 = 1.5f; // Cast From Value Type [double] To Reference Type [object] Boxing
+            //O1 = 'A'; // Cast From Value Type [char] To Reference Type [object] Boxing
+            //O1 = true; // Cast From Value Type [bool] To Reference Type [object] Boxing
+            //O1 = new DateTime(); // Cast From Value Type [DateTime] To Reference Type [object] Boxing
+
+
+            //int x = 5;
+            //object O1 = /*(object)*/x;
+
+            //Implicit Casting
+            //Safe Casting
+            //Boxing
+            //Parent = Child => Child is Parent
+
+            //Animal = Dog => Dog is Animal
+
+
+            //object O1 = 5;
+
+            //int x = (int)O1;
+
+            // Explicit Casting
+            // UnSafe Casting [May Throw Exception]
+            // UnBoxing
+            // Dog = (Dog) Animal => Animal is Dog
+            // child = (child) parent => parent is child
+
+            #endregion
             // Nullable Types
             //Value Type
             //Reference Type
