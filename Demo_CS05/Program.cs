@@ -1,4 +1,9 @@
-﻿namespace Demo_CS05
+﻿using Common;
+using System.Security.AccessControl;
+
+
+
+namespace Demo_CS05
 {
     public class Program
     {
@@ -258,7 +263,21 @@
 
             #endregion
 
+            #region 06 Access Modifiers
 
+            // Class Library
+
+            //Common.TypeA typeA = new TypeA();//Invalid -> typeA is Internal
+
+            Common.TypeB typeB = new TypeB();//valid -> typeA is public
+
+
+            //typeB.X = 12;//Invalid -> Private
+            //typeB.Y = 13;////Invalid -> Internal
+            typeB.Z = 14;//valid -> Public
+
+
+            #endregion
 
 
         }
