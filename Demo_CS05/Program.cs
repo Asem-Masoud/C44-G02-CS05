@@ -5,6 +5,40 @@ using System.Security.AccessControl;
 
 namespace Demo_CS05
 {
+
+    enum Seasons : byte
+    {
+        Spring = 10,
+        Winter = 100,
+        Summer,//101
+        Autumn
+    }
+
+    enum WeekDay
+    {
+        Saturday,
+        SunDay,
+        MonDay,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday
+    }
+
+    enum Gender
+    {
+        M = 1,
+        F = 2,
+        Male = 1,
+        Female = 2
+    }
+
+    class Employee
+    {
+        private int id;
+        private Gender G;
+    }
+
     public class Program
     {
         /*static void DoSomeCode()
@@ -259,7 +293,7 @@ namespace Demo_CS05
 
 
 
-            Console.WriteLine("Hello After Exception");
+            //Console.WriteLine("Hello After Exception");
 
             #endregion
 
@@ -276,6 +310,36 @@ namespace Demo_CS05
             //typeB.Y = 13;////Invalid -> Internal
             typeB.Z = 14;//valid -> Public
 
+
+            #endregion
+
+            #region 07 Enum Ex01
+
+            // Enum : Value Types
+            // Stack
+            // Created in a nameSpace
+
+
+            //Seasons S01 = Seasons.Autumn;
+
+            //S01 = Seasons.Spring;
+
+            //Console.WriteLine((int)S01);
+
+            // Stack
+            // CLR Represented Enum As Integer Value In Memory
+
+            //Gender G01 = (Gender)10;
+            //Console.WriteLine(G01);
+
+            //Gender G02 = (Gender)Enum.Parse(typeof(Gender), Console.ReadLine(), true);
+
+            //Gender G01;
+            //Enum.TryParse(typeof(Gender), Console.ReadLine(), true, out object O1);
+
+            //G01 = (Gender)O1;
+
+            //Console.WriteLine(G01);
 
             #endregion
 
