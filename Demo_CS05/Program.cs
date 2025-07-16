@@ -5,6 +5,40 @@ using System.Security.AccessControl;
 
 namespace Demo_CS05
 {
+
+    enum Seasons : byte
+    {
+        Spring = 10,
+        Winter = 100,
+        Summer,//101
+        Autumn
+    }
+
+    enum WeekDay
+    {
+        Saturday,
+        SunDay,
+        MonDay,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday
+    }
+
+    enum Gender
+    {
+        M = 1,
+        F = 2,
+        Male = 1,
+        Female = 2
+    }
+
+    class Employee
+    {
+        private int id;
+        private Gender G;
+    }
+
     public class Program
     {
         /*static void DoSomeCode()
@@ -88,7 +122,48 @@ namespace Demo_CS05
         static void Main()
         {
 
+            #region 01 Boxing And UnBoxing 
 
+            // Boxing : Casting From Value Type To ReferenceType
+            // UnBoxing : Casting From ReferenceType To ValueType
+
+            //object O1;
+
+            // 01 Can Refer To Instance Of "Object" Or Any Instance of Any Type
+
+            //O1 = 10;
+            //O1 = "Ahmed";
+
+
+            //O1 = 3; // Cast From Value Type [int] To Reference Type [object] Boxing
+            //O1 = 1.5f; // Cast From Value Type [double] To Reference Type [object] Boxing
+            //O1 = 'A'; // Cast From Value Type [char] To Reference Type [object] Boxing
+            //O1 = true; // Cast From Value Type [bool] To Reference Type [object] Boxing
+            //O1 = new DateTime(); // Cast From Value Type [DateTime] To Reference Type [object] Boxing
+
+
+            //int x = 5;
+            //object O1 = /*(object)*/x;
+
+            //Implicit Casting
+            //Safe Casting
+            //Boxing
+            //Parent = Child => Child is Parent
+
+            //Animal = Dog => Dog is Animal
+
+
+            //object O1 = 5;
+
+            //int x = (int)O1;
+
+            // Explicit Casting
+            // UnSafe Casting [May Throw Exception]
+            // UnBoxing
+            // Dog = (Dog) Animal => Animal is Dog
+            // child = (child) parent => parent is child
+
+            #endregion
             // Nullable Types
             //Value Type
             //Reference Type
@@ -259,7 +334,7 @@ namespace Demo_CS05
 
 
 
-            Console.WriteLine("Hello After Exception");
+            //Console.WriteLine("Hello After Exception");
 
             #endregion
 
@@ -276,6 +351,36 @@ namespace Demo_CS05
             //typeB.Y = 13;////Invalid -> Internal
             typeB.Z = 14;//valid -> Public
 
+
+            #endregion
+
+            #region 07 Enum Ex01
+
+            // Enum : Value Types
+            // Stack
+            // Created in a nameSpace
+
+
+            //Seasons S01 = Seasons.Autumn;
+
+            //S01 = Seasons.Spring;
+
+            //Console.WriteLine((int)S01);
+
+            // Stack
+            // CLR Represented Enum As Integer Value In Memory
+
+            //Gender G01 = (Gender)10;
+            //Console.WriteLine(G01);
+
+            //Gender G02 = (Gender)Enum.Parse(typeof(Gender), Console.ReadLine(), true);
+
+            //Gender G01;
+            //Enum.TryParse(typeof(Gender), Console.ReadLine(), true, out object O1);
+
+            //G01 = (Gender)O1;
+
+            //Console.WriteLine(G01);
 
             #endregion
 
