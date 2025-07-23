@@ -95,7 +95,7 @@ namespace Ass_Cs05
             // Create Variable from previous Enum to Add and Remove Permission from variable,
             // check if specific Permission is existed inside variable
 
-
+            /*
             Permissions userPermissions = Permissions.Read | Permissions.Write;
 
             Console.WriteLine("Initial permissions: " + userPermissions);
@@ -123,7 +123,7 @@ namespace Ass_Cs05
             {
                 Console.WriteLine("Delete permission is assigned.");
             }
-
+            */
             #endregion
 
             #region Q5
@@ -131,6 +131,7 @@ namespace Ass_Cs05
             // Create an enum called "Colors" with the basic colors (Red, Green, Blue) as its members.
             // Write a C# program that takes a color name as input from the user and displays a message indicating whether the input color is a primary color or not.
 
+            /*
             Console.WriteLine("Enter a color name:");
             string input = Console.ReadLine();
 
@@ -144,7 +145,7 @@ namespace Ass_Cs05
             {
                 Console.WriteLine($"{input} is NOT a primary color.");
             }
-
+            */
             #endregion
         }
     }
